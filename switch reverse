@@ -1,0 +1,16 @@
+void main()
+{
+ SWITCH=1;               /* Configure Port Pin P0.1 as input pin*/
+ ULED=1;              /* Turn OF the LED */
+ while(1)            /* Infinite loop */
+ {
+  if(SWITCH==0)	     /* If SW is pressed , Turn OFF the LED */
+  {
+   ULED=0;
+  }
+  else
+  {
+   ULED=1;	     /* If SW is not pressed (open), Turn ON the LED */
+  }
+ }
+}

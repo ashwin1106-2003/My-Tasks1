@@ -1,0 +1,33 @@
+#include<AT89S52.h>
+#define ULED P2_0   /*connect led to port 2*/
+#define SW P3_7    /*connect switch to port 3*/ 
+ 
+void delay(int);
+
+void main()
+{
+ SW=1;
+ ULED=1;
+ while(1)
+ {
+  if(SW==0)
+  {
+   ULED=!ULED;
+   delay(10);
+  }
+  else
+  {
+   ULED=1;
+  }
+ }
+}
+
+void delay(int time) /* */
+{
+ int i,j;
+ for(i=0;i<time;i++)
+ {
+  for(j=0;j<1275;j++)
+  {}
+ }
+}

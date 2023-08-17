@@ -1,0 +1,9 @@
+#include<AT89S52.h>
+#define ULED P2_0 /*connecting led to port 2
+void main()
+{
+ULED=0;  /*turn on LED
+while(1)
+ {
+ }
+}

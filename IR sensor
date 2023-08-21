@@ -1,0 +1,24 @@
+#include<AT89S52.h>
+#define RLED P2_1
+#define GLED P2_2
+#define SW p2_4
+
+void main()
+{
+	SW==1;
+	GLED==0;
+	RLED==0;
+}
+	while(1){
+	if(SW==1){
+	RLED=1;
+	GLED=0;
+	}
+	else
+	{
+	RLED=0;
+	GLED=1;
+	
+	}
+	}
+}
